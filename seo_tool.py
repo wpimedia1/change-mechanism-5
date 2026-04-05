@@ -266,8 +266,8 @@ def call_gemini_api(prompt: str, gemini_key: str) -> str:
 # 4. STREAMLIT UI & LOGIC
 # ---------------------------------------------------------
 
-st.set_page_config(page_title="Powerhouse SEO 2026", page_icon="⚡", layout="wide")
-st.title("⚡ Powerhouse SEO Tool (2026)")
+st.set_page_config(page_title="SEO Sharker | Live SERP", page_icon="⚡", layout="wide")
+st.title("⚡ SEO Sharker Tool")
 st.markdown("Powered by Google Gemini & Live SERP Scraping. Bring your own API keys.")
 
 with st.sidebar:
