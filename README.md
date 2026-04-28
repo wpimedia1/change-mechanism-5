@@ -59,6 +59,23 @@ streamlit run seo_tool.py
 
 The app opens at `http://localhost:8501`. Paste your Gemini API key in the sidebar and go.
 
+
+## SERP Agent (CLI)
+
+Run automated SERP-targeted scraping from the command line:
+
+```bash
+python serp_agent.py --keyword "best crm for startups" --max-urls 10
+```
+
+With optional AI summary:
+
+```bash
+python serp_agent.py --keyword "best crm for startups" --max-urls 10 --gemini-key "$GEMINI_API_KEY"
+```
+
+This prints JSON with discovered URLs, scrape payloads, assembled master prompt, and optional Gemini output.
+
 ## Deploy to Streamlit Community Cloud
 
 1. Push this repo to GitHub
