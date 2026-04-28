@@ -86,10 +86,15 @@ This prints JSON with discovered URLs, scrape payloads, assembled master prompt,
 ## Project Structure
 
 ```
-├── seo_tool.py          # Main application
-├── requirements.txt     # Python dependencies
-├── README.md            # This file
-└── LICENSE              # MIT License
+├── seo_tool.py                  # Streamlit app
+├── serp_agent.py                # CLI SERP automation agent
+├── tests/
+│   ├── test_security.py         # SSRF/fetch safety tests
+│   ├── test_api_key_transport.py# API key transport tests
+│   └── test_serp_agent.py       # Agent workflow tests
+├── requirements.txt             # Python dependencies
+├── README.md                    # This file
+└── LICENSE                      # MIT License
 ```
 
 ## Safety & Privacy
